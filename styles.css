@@ -1,0 +1,139 @@
+:root {
+    /* Primary */
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    
+    /* Neutral */
+    --darkGray: hsl(0, 0%, 59%);
+    
+    /* FONTS */
+    --fontSizeNameStats: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background: 
+    url(./images/bg-pattern-top.svg) no-repeat -330px -240px,
+    url(./images/bg-pattern-bottom.svg) no-repeat 155px 310px;
+    background-size: 500px;
+    background-color: var(--darkCyan);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    margin: auto;
+}
+
+.card {
+    background: url(./images/bg-pattern-card.svg) no-repeat top;
+    background-color: #fff;
+    background-size: contain;
+    width: 310px;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 15px 50px hsla(229, 23%, 23%, 0.459);
+}
+
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: 90px;
+}
+
+.card .infoSobre .nomeIdade {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card .infoSobre .nomeIdade h1 {
+    font-size: var(--fontSizeNameStats);
+    color: var(--veryDarkDesaturatedBlue);
+    margin-right: 8px;
+}
+
+.card .infoSobre .nomeIdade span {
+    color: var(--darkGray);
+    font-size: var(--fontSizeNameStats);
+}
+
+.card .infoSobre .cidade {
+    text-align: center;
+    font-size: 13px;
+    color: var(--darkGray);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card .linha {
+    background-color: #afafaf44;
+    border: none;
+    width: 100%;
+    height: 1px;
+}
+
+.card .infoNumeros {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card .infoNumeros .numeros {
+    margin: 0 25px;
+   text-align: center;
+}
+
+.card .infoNumeros .numeros h1 {
+    font-size: var(--fontSizeNameStats);
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.card .infoNumeros .numeros span {
+    font-size: 11px;
+    color: var(--darkGrayishBlue);
+}
+
+footer {
+    font-size: 0.8em;
+    color: var(--veryDarkDesaturatedBlue);
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1440px) {
+    body {
+        background: 
+        url(./images/bg-pattern-top.svg) no-repeat -190px -240px,
+        url(./images/bg-pattern-bottom.svg) no-repeat 700px 500px;
+        background-size: 900px;
+        background-color: var(--darkCyan);
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background: 
+        url(./images/bg-pattern-top.svg) no-repeat -220px -240px,
+        url(./images/bg-pattern-bottom.svg) no-repeat 400px 300px;
+        background-size: 550px;
+        background-color: var(--darkCyan);
+        }
+}
